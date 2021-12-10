@@ -8,11 +8,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       {focusSubjet ? (
-        null
+        <Text style={{ color: 'white' }}>{focusSubjet}</Text>
       ) : (
-        <Focus />
+        <Focus addSubject={setFocusSubject} />
       )
       }
+      <Text>{focusSubjet}</Text>
     </View>
   );
 }
